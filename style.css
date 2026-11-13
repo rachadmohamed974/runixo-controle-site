@@ -235,3 +235,16 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .brand .logo{width:46px;height:43px}
 .brand .wm b{font-size:1.55rem}
 .brand .wm small{font-size:.68rem}
+
+/* Pages engins */
+.crumb{font-size:.95rem;color:#AEB9CC;margin:0 0 10px}
+.crumb a{color:#fff}
+a.engin{text-decoration:none;color:inherit;transition:border-color .15s}
+a.engin:hover{border-color:var(--orange)}
+a.engin:hover h3{color:var(--orange)}
+.engin .e-more{display:block;margin-top:10px;font-weight:700;font-size:.92rem;color:var(--orange)}
+.engin.other .e-body{justify-content:flex-start}
+.engin.other h3{flex:none}
+.others{display:flex;flex-wrap:wrap;gap:8px 10px;max-width:none}
+.others a{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:3px;background:var(--surface);text-decoration:none;font-weight:600;font-size:.95rem}
+.others a:hover{border-color:var(--orange);color:var(--orange)}

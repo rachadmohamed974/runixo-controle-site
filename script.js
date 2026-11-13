@@ -25,6 +25,12 @@ var DEVIS_MAIL = "controle@3aim.fr";
     var offre = new URLSearchParams(location.search).get("offre");
     if (offre === "abonnement") document.getElementById("c-abo").checked = true;
     if (offre === "duerp") document.getElementById("c-duerp").checked = true;
+    var engin = new URLSearchParams(location.search).get("engin");
+    if (engin) {
+      var vgp = form.querySelector('input[value="VGP engins et levage"]');
+      if (vgp) vgp.checked = true;
+      form.message.value = "VGP " + engin + " – nombre d’engins : \n";
+    }
   } catch (e) {}
 
   function say(text, kind) { out.textContent = text; out.className = "form-msg " + (kind || ""); }

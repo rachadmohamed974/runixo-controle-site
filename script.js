@@ -16,6 +16,17 @@ var DEVIS_MAIL = "controle@3aim.fr";
     });
   });
 
+  // Bouton « Espace client » : mène au registre RUNIXO CONTRÔLE (rapports VGP, EPI, DUERP de chaque client)
+  document.querySelectorAll(".nav").forEach(function (nav) {
+    if (nav.querySelector(".espace-client")) return;
+    var a = document.createElement("a");
+    a.className = "btn btn-line espace-client";
+    a.href = "https://registre.3aim.fr";
+    a.textContent = "🔒 Espace client";
+    a.title = "Retrouvez vos rapports de contrôle (code d’accès fourni par RUNIXO CONTRÔLE)";
+    nav.insertBefore(a, nav.querySelector(".btn-or"));
+  });
+
   var form = document.getElementById("devis-form");
   if (!form) return;
   var out = document.getElementById("f-msg-out");

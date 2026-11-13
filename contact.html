@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact et demande de devis – RUNIXO CONTRÔLE</title>
+<meta name="description" content="Contactez RUNIXO CONTRÔLE ou demandez un devis pour vos VGP, contrôles EPI antichute, document unique ou abonnement prévention.">
+<meta name="theme-color" content="#12213F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2312213F'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' stroke='%23E87722' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="RUNIXO CONTRÔLE, accueil">RUNIXO <b>CONTRÔLE</b></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a><a href="vgp.html">VGP</a><a href="epi.html">EPI antichute</a><a href="duerp.html">Document unique</a><a href="registre.html">Registre de sécurité</a><a href="qui-sommes-nous.html">Qui sommes-nous</a><a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-or" href="contact.html">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <div>
+    <h1>Contact et devis</h1>
+    <p class="lead">Appelez-nous, écrivez-nous ou remplissez le formulaire : nous revenons vers vous rapidement.</p>
+  </div>
+  <div class="facts">
+    <div><span>Téléphone</span><strong><a href="tel:+262692098592" style="color:#fff;text-decoration:none">0692 09 85 92</a></strong></div>
+    <div><span>E-mail</span><strong><a href="mailto:controle@3aim.fr" style="color:#fff;text-decoration:none">controle@3aim.fr</a></strong></div>
+    <div><span>Adresse</span><strong>109 Lotissement Les Lilas, 97440 Saint-André</strong></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <form class="form" id="devis-form" novalidate>
+    <div><label for="f-ent">Entreprise</label><input id="f-ent" name="entreprise" required autocomplete="organization"></div>
+    <div><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" required autocomplete="name"></div>
+    <div><label for="f-tel">Téléphone</label><input id="f-tel" name="telephone" type="tel" required autocomplete="tel" inputmode="tel"></div>
+    <div><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" required autocomplete="email"></div>
+    <div><label for="f-com">Commune d’intervention</label><input id="f-com" name="commune" placeholder="Ex. Saint-Pierre"></div>
+    <div><label for="f-nb">Nombre d’engins ou de salariés</label><input id="f-nb" name="quantite" placeholder="Ex. 3 nacelles, 8 harnais"></div>
+    <fieldset class="full">
+      <legend>Ce dont vous avez besoin</legend>
+      <div class="choices">
+        <label><input type="checkbox" name="besoin" value="VGP engins et levage"> VGP</label>
+        <label><input type="checkbox" name="besoin" value="Contrôle EPI antichute"> EPI antichute</label>
+        <label><input type="checkbox" name="besoin" value="Document unique (DUERP)" id="c-duerp"> Document unique</label>
+        <label><input type="checkbox" name="besoin" value="Abonnement prévention" id="c-abo"> Abonnement prévention</label>
+      </div>
+    </fieldset>
+    <div class="full"><label for="f-msg">Précisions</label><textarea id="f-msg" name="message" placeholder="Types d’engins, dates souhaitées, date de votre dernière VGP…"></textarea></div>
+    <input class="hp" type="text" name="site_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label class="consent full"><input type="checkbox" id="f-ok" required> J’accepte que RUNIXO CONTRÔLE utilise ces informations pour répondre à ma demande. Elles ne sont jamais transmises à des tiers.</label>
+    <div class="full"><button class="btn btn-or" type="submit">Envoyer ma demande</button></div>
+    <p class="form-msg" id="f-msg-out" role="status"></p>
+  </form>
+</div></section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>RUNIXO CONTRÔLE</h4>
+        <p>Vérifications périodiques des engins de levage et de chantier, contrôle des EPI antichute, document unique et registre de sécurité, partout à La Réunion.</p>
+      </div>
+      <div>
+        <h4>Nos contrôles</h4>
+        <ul>
+          <li><a href="vgp.html">VGP engins et levage</a></li>
+          <li><a href="epi.html">EPI antichute</a></li>
+          <li><a href="duerp.html">Document unique (DUERP)</a></li>
+          <li><a href="registre.html">Registre de sécurité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+262692098592">0692 09 85 92</a></li>
+          <li><a href="mailto:controle@3aim.fr">controle@3aim.fr</a></li>
+          <li>Saint-André, La Réunion</li>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="https://espace.3aim.fr">Espace client</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 RUNIXO CONTRÔLE, SAS – RCS Saint-Denis 988 171 740</span>
+      <span><a href="mentions-legales.html">Mentions légales et confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

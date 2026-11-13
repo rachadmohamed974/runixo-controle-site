@@ -208,3 +208,30 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .top .wrap{max-width:1320px}
 @media (min-width:1141px){.nav a{padding:8px 9px;font-size:.93rem}.top .btn{padding:10px 14px;margin-left:6px}}
 @media (min-width:1141px) and (max-width:1300px){.brand{font-size:1.25rem}.nav a{padding:8px 6px;font-size:.88rem}}
+
+/* Logo bouclier */
+.brand{align-items:center;gap:10px}
+.brand .logo{width:38px;height:36px;color:#fff;flex:none}
+.wm{display:flex;flex-direction:column;line-height:1}
+.wm b{font-stretch:100%;font-weight:800;font-size:1.35rem;letter-spacing:.04em;color:#fff}
+.wm small{font-size:.62rem;font-weight:600;letter-spacing:.42em;color:#D9E0EC;margin-top:3px;padding-left:2px}
+.foot-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-logo .logo{width:34px;height:32px;color:#fff}
+.foot-logo .wm b{font-size:1.2rem}
+
+/* Vignettes d'engins */
+.engins{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px}
+.engin{background:var(--surface);border-radius:6px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.engin img{width:100%;aspect-ratio:216/124;object-fit:cover}
+.engin .e-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.engin h3{font-size:1.1rem;flex:1;margin-bottom:8px}
+.engin .e-price{font-stretch:70%;font-weight:800;font-size:1.8rem;color:var(--orange);line-height:1}
+.engin .e-price small{font-size:.9rem;font-stretch:100%;color:var(--muted)}
+.engin.other{background:var(--bg);border-style:dashed;justify-content:center}
+.engin.other p{color:var(--muted);font-size:.92rem;margin-bottom:10px}
+.sec.alt .engin{background:var(--bg)}
+.prices.even{grid-template-columns:1fr 1fr}
+@media (max-width:860px){.prices.even{grid-template-columns:1fr}}
+.brand .logo{width:46px;height:43px}
+.brand .wm b{font-size:1.55rem}
+.brand .wm small{font-size:.68rem}
